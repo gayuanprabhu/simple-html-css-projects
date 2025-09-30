@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Button Pulse Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .pulse-button {
+      background: #4CAF50;
+      border: none;
+      color: white;
+      padding: 20px 40px;
+      font-size: 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 10px #4CAF50;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #4CAF50;
+      }
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #76c776;
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #4CAF50;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="pulse-button">Click Me!</button>
+
+</body>
+</html>

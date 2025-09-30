@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=1" alt="Photo 1" />
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=2" alt="Photo 2" />
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=3" alt="Photo 3" />
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=4" alt="Photo 4" />
+      <div class="caption">Photo 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=5" alt="Photo 5" />
+      <div class="caption">Photo 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=6" alt="Photo 6" />
+      <div class="caption">Photo 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=7" alt="Photo 1" />
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=8" alt="Photo 2" />
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=9" alt="Photo 3" />
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=10" alt="Photo 4" />
+      <div class="caption">Photo 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=11" alt="Photo 5" />
+      <div class="caption">Photo 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=12" alt="Photo 6" />
+      <div class="caption">Photo 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=13" alt="Photo 1" />
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=14" alt="Photo 2" />
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=15" alt="Photo 3" />
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=16" alt="Photo 4" />
+      <div class="caption">Photo 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=17" alt="Photo 5" />
+      <div class="caption">Photo 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=18" alt="Photo 6" />
+      <div class="caption">Photo 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=19" alt="Photo 1" />
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=20" alt="Photo 2" />
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=21" alt="Photo 3" />
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=22" alt="Photo 4" />
+      <div class="caption">Photo 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=23" alt="Photo 5" />
+      <div class="caption">Photo 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=24" alt="Photo 6" />
+      <div class="caption">Photo 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=25" alt="Photo 1" />
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=26" alt="Photo 2" />
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=27" alt="Photo 3" />
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=28" alt="Photo 4" />
+      <div class="caption">Photo 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=29" alt="Photo 5" />
+      <div class="caption">Photo 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=30" alt="Photo 6" />
+      <div class="caption">Photo 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=31" alt="Photo 1" />
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=32" alt="Photo 2" />
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=33" alt="Photo 3" />
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=34" alt="Photo 4" />
+      <div class="caption">Photo 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=35" alt="Photo 5" />
+      <div class="caption">Photo 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=36" alt="Photo 6" />
+      <div class="caption">Photo 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=37" alt="Photo 1" />
+       <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=38" alt="Photo 2" />
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=39" alt="Photo 3" />
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://picsum.photos/200/150?random=40" alt="Photo 4" />
+      <div class="caption">Photo 4</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+

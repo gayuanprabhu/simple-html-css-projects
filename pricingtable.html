@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .pricing-table {
+      display: flex;
+      gap: 20px;
+      max-width: 900px;
+      width: 100%;
+    }
+    .plan {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .plan:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .popular {
+      border: 2px solid #4CAF50;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    .price {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing-table">
+    <div class="plan">
+      <h3>Basic</h3>
+      <div class="price">₹199/mo</div>
+      <ul>
+        <li>5 Projects</li>
+        <li>10 GB Storage</li>
+        <li>Email Support</li>
+      </ul>
+      <button>Select</button>
+    </div>
+
+    <div class="plan popular">
+      <h3>Pro</h3>
+      <div class="price">₹300/mo</div>
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>100 GB Storage</li>
+        <li>Priority Support</li>
+      </ul>
+      <button>Select</button>
+    </div>
+
+    <div class="plan">
+      <h3>Enterprise</h3>
+      <div class="price">Custom</div>
+      <ul>
+        <li>Custom Projects</li>
+        <li>Unlimited Storage</li>
+        <li>Dedicated Support</li>
+      </ul>
+      <button>Select</button>
+    </div>
+  </div>
+
+</body>
+</html>
