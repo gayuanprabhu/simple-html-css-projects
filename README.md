@@ -1,13 +1,11 @@
 # Simple HTML/CSS Projects
 
 - **Basics**
-  - Project 1: [project1](basics/project1) - A simple landing page.
-  - Project 2: [project2](basics/project2) - Responsive navbar.
+  - Project 1: [project1](basics/project1) - Login Form.
+  - Project 2: [project2](basics/project2) - Pricing Table.
+  - Project 5: [project5](advanced/project3) -My Portfolio.
 
 - **Intermediate**
-  - Project 3: [project3](intermediate/project3) - Portfolio site.
-  - Project 4: [project4](intermediate/project4) - CSS animations demo.
+  - Project 3: [project3](intermediate/project4) -Photo Gallery.
+  - Project 4: [project4](intermediate/project5) -Button Pulse Animation.
 
-- **Advanced**
-  - Project 5: [project5](advanced/project5) - Interactive form.
-  - Project 6: [project6](advanced/project6) - Grid layout gallery.
