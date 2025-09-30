@@ -6,6 +6,6 @@
   - Project 5: [project3](https://github.com/gayuanprabhu/simple-html-css-projects/blob/main/portfo.html) -My Portfolio.
 
 - **Intermediate**
-  - Project 3: [project4](intermediate/project4) -Photo Gallery.
+  - Project 3: [project4](https://github.com/gayuanprabhu/simple-html-css-projects/blob/main/gallery.html) -Photo Gallery.
   - Project 4: [project5](https://github.com/gayuanprabhu/simple-html-css-projects/blob/main/buttonanimation.html) -Button Pulse Animation.
 
