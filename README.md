@@ -2,7 +2,7 @@
 
 - **Basics**
   - Project 1: [project1](https://github.com/gayuanprabhu/simple-html-css-projects/blob/main/loginform.html) - Login Form.
-  - Project 2: [project2](basics/project2) - Pricing Table.
+  - Project 2: [project2](https://github.com/gayuanprabhu/simple-html-css-projects/blob/main/pricingtable.html) - Pricing Table.
   - Project 5: [project3](https://github.com/gayuanprabhu/simple-html-css-projects/blob/main/portfo.html) -My Portfolio.
 
 - **Intermediate**
