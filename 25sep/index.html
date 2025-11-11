@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgriCare Plant Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AgriCare Plant Health Analyzer</h1>
+    </header>
+
+    <main>
+      <section class="upload-section">
+        <label for="fileupload" class="upload-label">Upload a plant image:</label>
+        <input type="file" id="fileupload" accept="image/*" />
+      </section>
+
+      <section class="result-section">
+        <h2>Analysis Result</h2>
+        <pre id="result" class="result-text">No analysis yet.</pre>
+      </section>
+
+      <section class="tts-section">
+        <label for="languageSelect">Select Language:</label>
+        <select id="languageSelect">
+          <option value="en-US">English</option>
+          <option value="hi-IN">Hindi</option>
+        </select>
+        <button id="listenBtn">Listen Result</button>
+      </section>
+    </main>
+
+    <footer>
+      <small>© 2025 AgriCare</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

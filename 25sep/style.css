@@ -1,0 +1,100 @@
+/* Basic clean styling */
+
+body {
+  font-family: "Public Sans", "Noto Sans", sans-serif;
+  background: #f9faf9;
+  color: #111811;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.container {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+  padding: 30px;
+}
+
+header h1 {
+  margin: 0 0 20px 0;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #19e619;
+}
+
+.upload-section,
+.result-section,
+.tts-section {
+  margin-bottom: 25px;
+}
+
+.upload-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#fileupload {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #111811;
+  font-size: 1rem;
+}
+
+.result-section h2 {
+  margin-bottom: 8px;
+}
+
+.result-text {
+  background: #f0f4f0;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 100px;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  color: #333;
+}
+
+.tts-section label,
+.tts-section select,
+.tts-section button {
+  font-size: 1rem;
+}
+
+.tts-section select {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #111811;
+}
+
+#listenBtn {
+  margin-left: 10px;
+  padding: 6px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #19e619;
+  color: #111811;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#listenBtn:hover {
+  background-color: #14b214;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.9rem;
+}
