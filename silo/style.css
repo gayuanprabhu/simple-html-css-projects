@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    z-index: inherit;
+    flex-wrap: wrap;
+}
+nav{
+    padding: 10px 20px;
+    color: white;
+
+}
+navbar-toggler-icon{
+    background-color: white;
+    color: #f9f9f9;
+}
+h2{
+    color: #333;
+    text-align: center;
+}
+.navbar-brand{
+    margin-left: 20px;
+    color: #333;
+    text-decoration: solid;
+    font-size: 2.5rem;
+    text-decoration:blanchedalmond;
+}
+.nav-item{
+    border: none;
+    color: white; 
+    text-align: left;
+    margin-right: 50px;
+}  
+h1{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    color: #333;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f4f5f8;
+    box-shadow: 0 0 10px rgba(12, 11, 11, 0.1);
+    text-align: center;
+        border-radius: 8px;
+
+}
+.container-
+.nav-links a {
+  color: rgb(235, 232, 232);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #e6f0ff;
+}
+.service-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section{
+  padding: 20px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+service-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* .demo{
+  background: #333;
+  color: white;
+  padding: 40px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+ */
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f3031;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #555;
+}
+img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+form button {
+  background-color: #343435;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #8c8d8f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0052cc;
+  color: white;
+  margin-top: 40px;
+}
+

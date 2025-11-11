@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sign In / Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f6f8fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .auth-container {
+    background: white;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(15,22,39,0.1);
+    width: 300px;
+    height: auto;
+  }
+  .tabs {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    color: #555;
+    user-select: none;
+  }
+  .tab.active {
+    border-color: #343435;
+    color: #b7b8b9;
+  }
+  form {
+    display: none;
+    flex-direction: column;
+  }
+  form.active {
+    display: flex;
+  }
+  label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  .view{
+    margin-bottom: 20px;
+    color: #202020;
+    text-align: center;
+  }
+  input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    outline-offset: 2px;
+    outline-color: transparent;
+    transition: outline-color 0.2s ease;
+  }
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline-color: #5f6164;
+    border-color: #7a7a7a;
+  }
+  button {
+    background: #202020;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button:hover {
+    background: #4e4e4e;
+  }
+  .forgot-password {
+    text-align: right;
+    margin-top: -12px;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  .forgot-password a {
+    color: #2b080e;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  .reset-password {
+    display: none;
+    flex-direction: column;
+  }
+  .reset-password.active {
+    display: flex;
+  }
+  .back-to-login {
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: right;
+  }
+  .back-to-login a {
+    color: #020d20;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .back-to-login a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="auth-container" role="main" aria-label="Authentication form">
+  <div class="tabs" role="tablist">
+    <div class="tab active" role="tab" tabindex="0" aria-selected="true" aria-controls="loginForm" id="loginTab">Login</div>
+    <div class="tab" role="tab" tabindex="-1" aria-selected="false" aria-controls="signUpForm" id="signUpTab">Sign Up</div>
+  </div>
+
+  <!-- Login form -->
+   <!-- Login Section -->
+  <section id="login" class="view">
+  <h2>Welcome Back to LOGO</h2>
+      <p>Log in or Sign Up to access your LOGO dashboard, manage your transactions, and view your account activity.</p>
+
+  <form id="loginForm" class="active" aria-labelledby="loginTab">
+    <label for="loginEmail">Email address</label>
+    <input type="email" id="loginEmail" name="loginEmail" required autocomplete="username" placeholder="you@example.com" />
+
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword" name="loginPassword" required autocomplete="current-password" placeholder="••••••••" />
+
+    <div class="forgot-password">
+      <a href="#" id="forgotPasswordLink">Forgot password?</a>
+    </div>
+
+    <button type="submit">Log In</button>
+  </form>
+
+  <br>
+
+  <!-- Sign Up form -->
+
+  <section id="signup">
+
+  <form id="signUpForm" aria-labelledby="signUpTab" novalidate>
+    <label for="signUpName">Full Name</label>
+    <input type="text" id="signUpName" name="signUpName" required autocomplete="name" placeholder="Jenny Citizen" />
+
+    <label for="signUpEmail">Email address</label>
+    <input type="email" id="signUpEmail" name="signUpEmail" required autocomplete="email" placeholder="you@example.com" />
+
+    <label for="signUpPassword">Password</label>
+    <input type="password" id="signUpPassword" name="signUpPassword" required autocomplete="new-password" placeholder="Create a password" />
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <!-- Reset Password form -->
+  <form id="resetPasswordForm" class="reset-password" aria-label="Reset Password">
+    <label for="resetEmail">Enter your email to reset password</label>
+    <input type="email" id="resetEmail" name="resetEmail" required autocomplete="email" placeholder="you@example.com" />
+    <button type="submit">Reset Password</button>
+    <div class="back-to-login">
+      <a href="#" id="backToLoginLink">Back to Login</a>
+    </div>
+  </form>
+</div>
+
+<script>
+  const loginTab = document.getElementById('loginTab');
+  const signUpTab = document.getElementById('signUpTab');
+  const loginForm = document.getElementById('loginForm');
+  const signUpForm = document.getElementById('signUpForm');
+  const resetPasswordForm = document.getElementById('resetPasswordForm');
+  const forgotPasswordLink = document.getElementById('forgotPasswordLink');
+  const backToLoginLink = document.getElementById('backToLoginLink');
+
+  function showLogin() {
+    loginTab.classList.add('active');
+    loginTab.setAttribute('aria-selected', 'true');
+    loginTab.tabIndex = 0;
+
+    signUpTab.classList.remove('active');
+    signUpTab.setAttribute('aria-selected', 'false');
+    signUpTab.tabIndex = -1;
+
+    loginForm.classList.add('active');
+    signUpForm.classList.remove('active');
+    resetPasswordForm.classList.remove('active');
+  }
+
+  function showSignUp() {
+    signUpTab.classList.add('active');
+    signUpTab.setAttribute('aria-selected', 'true');
+    signUpTab.tabIndex = 0;
+
+    loginTab.classList.remove('active');
+    loginTab.setAttribute('aria-selected', 'false');
+    loginTab.tabIndex = -1;
+
+    signUpForm.classList.add('active');
+    loginForm.classList.remove('active');
+    resetPasswordForm.classList.remove('active');
+  }
+
+  function showResetPassword() {
+    resetPasswordForm.classList.add('active');
+    loginForm.classList.remove('active');
+    signUpForm.classList.remove('active');
+  }
+
+  loginTab.addEventListener('click', showLogin);
+  signUpTab.addEventListener('click', showSignUp);
+
+  forgotPasswordLink.addEventListener('click', e => {
+    e.preventDefault();
+    showResetPassword();
+  });
+
+  backToLoginLink.addEventListener('click', e => {
+    e.preventDefault();
+    showLogin();
+  });
+
+  // Optional: accessibility keyboard support for tabs
+  [loginTab, signUpTab].forEach(tab => {
+    tab.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        if (tab === loginTab) {
+          showSignUp();
+          signUpTab.focus();
+        } else {
+          showLogin();
+          loginTab.focus();
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
